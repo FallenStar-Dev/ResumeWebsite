@@ -683,13 +683,13 @@ textarea {
 }
 .fixed-left-contact {
     height: 100%;
-    left: 0;
+    right: 0;
     position: fixed;
     width: 30px;
     z-index: 100;
 }
 .fixed-left-contact p {
-    left: -46px;
+    right: -46px;
     letter-spacing: 2px;
     position: absolute;
     top: 50%;
@@ -698,8 +698,8 @@ textarea {
 .fixed-right-socials {
 	bottom: 0;
 	position: fixed;
-	right: 3px;
-	top: 13%;
+	left: 3px;
+	top: 27%;
 	z-index: 9;
 }
 .fixed-right-socials ul {
