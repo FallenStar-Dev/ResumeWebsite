@@ -22,15 +22,15 @@ namespace ResumeWebsite.Tools
 
 
 
-        public IEnumerable<SkillsModel> SelectDb_Dapper_Skills(string query)
+        public IEnumerable<Skill> SelectDb_Dapper_Skills(string query)
         {
             var conn = GetConnection();
-            IEnumerable<SkillsModel> obj;
+            IEnumerable<Skill> obj;
             try
             {
                 conn.Open();
 
-                obj = conn.Query<SkillsModel>(query);
+                obj = conn.Query<Skill>(query);
 
                 conn.Close();
             }

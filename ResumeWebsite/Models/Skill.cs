@@ -1,6 +1,6 @@
 ﻿namespace ResumeWebsite.Models
 {
-    public class SkillsModel
+    public class Skill
     {
         public string Title { get; set; }
         public string Proficiency { get; set; }

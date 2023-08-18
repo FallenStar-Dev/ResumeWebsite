@@ -15,7 +15,7 @@ namespace ResumeWebsite.ViewComponents
             var querySkills = @"SELECT Title,Proficiency,SortID 
 								FROM   PersonalDb.dbo.Skills 
 								order by SortID";
-            var skillList = sql.SelectDb<SkillsModel>(querySkills).ToList();
+            var skillList = sql.SelectDb<Skill>(querySkills).ToList();
             return View("_Skills", skillList);
         }
     }
